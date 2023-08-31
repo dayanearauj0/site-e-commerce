@@ -4,15 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css ">
+  <link
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header></header>
+  <section 
+    id="carrinho" 
+    class="fixed top-0 right-[0px] bg-indico-100 h-screen w-[360px]">
+ 
+    <div id="cabecalho-carrinho"  class="flex justify-between m-4">
+      <p>Meu carrinho</p>
+       <button id="fechar-carrinho">
+         <i class="fa-solid fa-circle-xmark"></i>
+       </button>
+    </div>
+  <section id="produtos-carrinho">
+    <p>vestido florido longo</p>
+    <p>vestido florido azul</p>
+    <p>vestido rosa curto</p>
+  </section>
+    <p id="preco-total">$200</p>
+      <button class="bg-slate-200 text-slate-300 p-1">Finalizar Compra</button>
+  </section>
+  
+  
+  <header 
+   class="flex rgb(74 222 128) p-3 justify-between"> <!--cabeçalho -tem a logo e os dois icones de pesquisa, tem corficou em blocos as opçoes de pesquisa nos cantos-->
+ 
+    <img 
+     class="h-16"  
+     src="./assets/img/logo.farm-rio.png" 
+     alt="logo da farm"
+     />
+    <div class="text-slate-300 flex gap-2 items-end mx-4"><!--cor dos botoes, alinhdos em linha/lado a lado,e espaço entre eles,na parte de baixo do header,margem horizontal-->
+      <button id="abrir-carrinho">
+        <i class="fa-solid fa-user"></i>
+      </button> <!--procurei esse botao no fontawesome-->
+        <button><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+  </header>
     <main>
-      <section id="container-produto">
-       
-      </section>
+      <section id="container-produto" class="flex flex-wrap"></section>
     </main>
-    <script src="./main.js"></script>
+    <script type='module' src="./main.js"></script>
 </body>
 </html>
