@@ -3,6 +3,8 @@ const marca = "farm";
 const preco = 100;
 const nomeArquivoimagem = 'img1.webp';*/
 
+import { inicializarCarrinho } from "./src/menuCarrinho.js";
+
 const catalogo =[
     {
         id: 1,
@@ -52,21 +54,32 @@ const catalogo =[
         imagem:"produto-6.webp",
         feminino: true,
     },
+    {
+        id: 7,
+        nome: "vestido florido2",
+        marca: "farm",
+        preco: "550",
+        imagem:"produto-1.webp",
+        feminino:true,
+    },
 ];
 
 for(const produtoCatalogo of catalogo) {
-    const CartaoProduto = `<div id="card-produto-1"> 
+    const CartaoProduto = `<div class='border-solid border-2 border-sky-500 w-48 m-2' id="card-produto-${produtoCatalogo.id}"> 
     <img 
     src="./assets/img/${produtoCatalogo.imagem}"
     alt="imagem 1 da pagina" 
     style="height: 300px"
     />
-    <P>${produtoCatalogo.marca}</P>
+    <P class='marca'>${produtoCatalogo.marca}</P>
     <p>${produtoCatalogo.nome}</p>
     <p>$${produtoCatalogo.preco}</p>
     <button>Adicionar</button>
-    </div>`
+    </div>`;
+
     document.getElementById('container-produto').innerHTML += CartaoProduto
-}
+};
+
+inicializarCarrinho();
 
 
