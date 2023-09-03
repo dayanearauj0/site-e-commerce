@@ -11,46 +11,45 @@
   integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
   crossorigin="anonymous" 
   referrerpolicy="no-referrer" />
+  <!--link da linha 8 foi pego no site fot-awesome p/ conseguirmos baixar os icones carrinho e pessoa-->
 </head>
 <body>
   <section 
     id="carrinho" 
-    class="fixed top-0 right-[0px] bg-indico-100 h-screen w-[360px]">
+    class="fixed top-0 right-0 bg-indigo-100 h-screen w-[150px] text-slate-400">
  
     <div id="cabecalho-carrinho"  class="flex justify-between m-4">
       <p>Meu carrinho</p>
        <button id="fechar-carrinho">
-         <i class="fa-solid fa-circle-xmark"></i>
+         <i class="fa-solid fa-circle-xmark"></i><!--borão "x" de fechar carrinho - pegou no fontawesome-->
        </button>
     </div>
-  <section id="produtos-carrinho">
-    <p>vestido florido longo</p>
-    <p>vestido florido azul</p>
-    <p>vestido rosa curto</p>
-  </section>
+    <section id="produtos-carrinho">
+    <p>vestido florido1</p>
+    <p>vestido florido2</p>
+    <p>vestido florido3</p>
+    </section>
     <p id="preco-total">$200</p>
-      <button class="bg-slate-200 text-slate-300 p-1">Finalizar Compra</button>
+      <button class="bg-slate-100 text-slate-900 p-1">Finalizar Compra</button>
   </section>
-  
-  
-  <header 
-   class="flex rgb(74 222 128) p-3 justify-between"> <!--cabeçalho -tem a logo e os dois icones de pesquisa, tem corficou em blocos as opçoes de pesquisa nos cantos-->
- 
+  <!--cabeçalho -tem a logo e os dois icones de pesquisa, tem corficou em blocos as opçoes de pesquisa nos cantos-->
+  <header class="flex rgb(74 222 128) p-3 justify-between"> 
     <img 
      class="h-16"  
      src="./assets/img/logo.farm-rio.png" 
      alt="logo da farm"
-     />
-    <div class="text-slate-300 flex gap-2 items-end mx-4"><!--cor dos botoes, alinhdos em linha/lado a lado,e espaço entre eles,na parte de baixo do header,margem horizontal-->
+     /><!--altura da logo H-16-->
+
+     <!--cor dos botoes, alinhdos em linha/lado a lado,e espaço entre eles,na parte de baixo do header,margem horizontal=mx-->
+    <div class="text-slate-300 flex gap-2 items-end mx-2">
       <button id="abrir-carrinho">
-        <i class="fa-solid fa-user"></i>
-      </button> <!--procurei esse botao no fontawesome-->
-        <button><i class="fa-solid fa-cart-shopping"></i></button>
+        <i class="fa-solid fa-cart-shopping"></i></button>
+      <button><i class="fa-solid fa-user"></i></button> <!--procurei esse botao no fontawesome-->
     </div>
   </header>
     <main>
       <section id="container-produto" class="flex flex-wrap"></section>
-    </main>
-    <script type='module' src="./main.js"></script>
+    </main> <!--flex-wraP faz com que quebre os cards no container-->
+    <script type='module' src="./main.js"></script> 
 </body>
 </html>
