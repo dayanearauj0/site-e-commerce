@@ -3,7 +3,8 @@ const marca = "farm";
 const preco = 100;
 const nomeArquivoimagem = 'img1.webp';*/
 
-import { inicializarCarrinho } from "./src/menuCarrinho.js";
+import { inicializarCarrinho } from "./src/menuCarrinho";
+/*funcao acima foi pega do menu carrinho para funcionar o botao"x" */
 
 const catalogo =[
     {
@@ -56,7 +57,7 @@ const catalogo =[
     },
     {
         id: 7,
-        nome: "vestido florido2",
+        nome: "vestido florido7",
         marca: "farm",
         preco: "550",
         imagem:"produto-1.webp",
@@ -76,7 +77,7 @@ for(const produtoCatalogo of catalogo) {
     <p>$${produtoCatalogo.preco}</p>
     <button>Adicionar</button>
     </div>`;
-
+/*m-signitica margem-linha 68 -  */
     document.getElementById('container-produto').innerHTML += CartaoProduto
 };
 
