@@ -1,12 +1,12 @@
 function abrirCarrinho() {
     document.getElementById("carrinho").classlist.add("right-[0px]");
-    document.getElementById("carrinho").classlist.remove("right-[-360px]");
+    document.getElementById("carrinho").classlist.remove("right-[-150px]");
 
 }
 
 function fecharCarrinho() { 
     document.getElementById("carrinho").classlist.remove("right-[0px]");
-    document.getElementById("carrinho").classlist.add("right-[-360px]");
+    document.getElementById("carrinho").classlist.add("right-[-150px]");
     
 }
 /*essa funcao acima diz que faz o carrinho aparacer no 0px e desaparecer -360*/
@@ -23,4 +23,4 @@ export function inicializarCarrinho() {
 
 
 
-/*deve centralizar esse cod no main.js p ele funcionar*/
+/*deve centralizar esse cod no main.js p ele=botao funcionar*/
